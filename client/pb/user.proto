@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package user;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "../user";
+
+message UserRequest {
+    int64 id = 1;
+    string name = 2;
+    string event = 3;
+    repeated string config = 4;
+}
+
+message UserResponse {
+    int64 id = 1;
+    string name = 2;
+    string age = 3;
+    google.protobuf.Timestamp event_time = 4;
+    repeated string config_list = 5;
+}
+
+service UserService {
+    rpc GetUserList (UserRequest) returns (UserResponse);
+}
+
