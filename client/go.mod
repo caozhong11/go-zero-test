@@ -1,4 +1,4 @@
-module github.com/caozhong11/go-zero-test/client
+module client
 
 go 1.24
 
