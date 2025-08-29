@@ -1,4 +1,4 @@
-github.com/caozhong11/go-zero-test v1.0.0-beta h1:aavU2joIyJI0UHyyssrQwL7AMxiyP+c17TSPTfK75Rk=
-github.com/caozhong11/go-zero-test v1.0.0-beta/go.mod h1:QicBgU/AwZvzkrIhxduFztpglWfzY1y/CoRWgH89ve4=
-github.com/caozhong11/go-zero-test/client v0.0.0-20250829083712-8ff8905e3d79 h1:/Pq3TZsQfCUIqDG0HqZxwsSkG8cmlZ4H6DXDT7Qv5TI=
-github.com/caozhong11/go-zero-test/client v0.0.0-20250829083712-8ff8905e3d79/go.mod h1:eorh6o8rASaH2tQXvW0CenieJrgNEf7jm7ry4e9kNkQ=
+github.com/caozhong11/go-zero-test/client v1.0.3-beta h1:lMZAtEcuTQrn/KFTntPk+yEmNWlrV4fDvOboQA5Bfp8=
+github.com/caozhong11/go-zero-test/client v1.0.3-beta/go.mod h1:eorh6o8rASaH2tQXvW0CenieJrgNEf7jm7ry4e9kNkQ=
+google.golang.org/protobuf v1.36.8 h1:xHScyCOEuuwZEc6UtSOvPbAT4zRh0xcNRYekJwfqyMc=
+google.golang.org/protobuf v1.36.8/go.mod h1:fuxRtAxBytpl4zzqUh6/eyUujkJdNiuEkXntxiD/uRU=

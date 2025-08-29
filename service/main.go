@@ -1,12 +1,12 @@
 package main
 
 import (
-	"client/user"
 	"fmt"
+	"github.com/caozhong11/go-zero-test/client/user"
 )
 
 func main() {
 	fmt.Println("this is a server ")
-
-	user.UserRequest{}
+	request := user.UserRequest{}
+	fmt.Println(request)
 }
