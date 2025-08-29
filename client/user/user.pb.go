@@ -28,6 +28,7 @@ type UserRequest struct {
 	Name          string                 `protobuf:"bytes,2,opt,name=name,proto3" json:"name,omitempty"`
 	Event         string                 `protobuf:"bytes,3,opt,name=event,proto3" json:"event,omitempty"`
 	Config        []string               `protobuf:"bytes,4,rep,name=config,proto3" json:"config,omitempty"`
+	AddType       string                 `protobuf:"bytes,5,opt,name=add_type,json=addType,proto3" json:"add_type,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -88,6 +89,13 @@ func (x *UserRequest) GetConfig() []string {
 		return x.Config
 	}
 	return nil
+}
+
+func (x *UserRequest) GetAddType() string {
+	if x != nil {
+		return x.AddType
+	}
+	return ""
 }
 
 type UserResponse struct {
@@ -171,12 +179,13 @@ var File_user_proto protoreflect.FileDescriptor
 const file_user_proto_rawDesc = "" +
 	"\n" +
 	"\n" +
-	"user.proto\x12\x04user\x1a\x1fgoogle/protobuf/timestamp.proto\"_\n" +
+	"user.proto\x12\x04user\x1a\x1fgoogle/protobuf/timestamp.proto\"z\n" +
 	"\vUserRequest\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\x03R\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x14\n" +
 	"\x05event\x18\x03 \x01(\tR\x05event\x12\x16\n" +
-	"\x06config\x18\x04 \x03(\tR\x06config\"\xa0\x01\n" +
+	"\x06config\x18\x04 \x03(\tR\x06config\x12\x19\n" +
+	"\badd_type\x18\x05 \x01(\tR\aaddType\"\xa0\x01\n" +
 	"\fUserResponse\x12\x0e\n" +
 	"\x02id\x18\x01 \x01(\x03R\x02id\x12\x12\n" +
 	"\x04name\x18\x02 \x01(\tR\x04name\x12\x10\n" +

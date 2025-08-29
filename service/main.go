@@ -8,5 +8,5 @@ import (
 func main() {
 	fmt.Println("this is a server ")
 	request := user.UserRequest{}
-	fmt.Println(request)
+	fmt.Printf("%+v\n", request)
 }
